@@ -53,7 +53,7 @@ if len(user_input)>1:
     print('=====================================')
     map = MyMap(myUserLocation.user_state, myUserLocation.user_state_name)
 
-    path_to_html = "/Users/silviaresende/Documents/TOP/iHealthShare/images/myMap.html" 
+    path_to_html = "./images/mymap.html" 
 
     # Read file and keep in variable
     with open(path_to_html,'r') as f: 
@@ -68,10 +68,10 @@ if len(user_input)>1:
 
     bar = MyBar(myUserLocation.user_state, myUserLocation.user_state_name)
     st.write("Cases by Counties ")
-    st.image("/Users/silviaresende/Documents/TOP/iHealthShare/images/myBarChart.png")
+    st.image("./images/myBarChart.png")
     trend = MyTrends(myUserLocation.user_state, myUserLocation.user_state_name)
     st.write("Trends for Over Last Six Months ")
-    st.image("/Users/silviaresende/Documents/TOP/iHealthShare/images/myTrends.png")
+    st.image("./images/myTrends.png")
     print('=====================================')
     
     
